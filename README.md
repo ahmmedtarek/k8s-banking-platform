@@ -106,31 +106,31 @@ kubectl apply -f ingress/
 ```
 
 ### Security
-Default-deny network policies
-Restricted service-to-service communication
-Role-based access control (RBAC)
-Secrets for sensitive data
+- Default-deny network policies
+- Restricted service-to-service communication
+- Role-based access control (RBAC)
+- Secrets for sensitive data
 ---
 
 ### Observability
-Fluentd collects logs from nodes
-Logs stored in Elasticsearch
-Can be visualized using Kibana (optional)
+- Fluentd collects logs from nodes
+- Logs stored in Elasticsearch
+- Can be visualized using Kibana (optional)
 ---
 
 ### Future Improvements
-CI/CD pipeline (GitHub Actions / Jenkins)
-Helm chart packaging
-Prometheus + Grafana monitoring
-Service mesh (Istio)
+- CI/CD pipeline (GitHub Actions / Jenkins)
+- Helm chart packaging
+- Prometheus + Grafana monitoring
+- Service mesh (Istio)
 ---
 
 ### Author
 
-Ahmed Tarek
-DevOps / Kubernetes Project
+- Ahmed Tarek
+- DevOps / Kubernetes Project
 ---
 ### License
 
-Educational project only.
+- Educational project only.
 ---
