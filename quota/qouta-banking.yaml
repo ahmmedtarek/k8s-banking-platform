@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: banking-quota
+  namespace: banking
+spec:
+  hard:
+    cpu: "2"
+    memory: 4G
+    pods: "30"
+status: {}

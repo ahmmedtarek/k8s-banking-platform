@@ -1,0 +1,16 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+
+metadata:
+  name: fluentd-rolebinding
+  namespace: banking
+
+subjects:
+  - kind: ServiceAccount
+    name: fluentd-account
+    namespace: banking
+
+roleRef:
+  kind: Role
+  name: fluentd-role
+  apiGroup: rbac.authorization.k8s.io
