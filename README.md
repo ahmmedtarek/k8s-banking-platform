@@ -1,10 +1,10 @@
-# 🏦 Kubernetes Banking Platform (Full Stack DevOps Project)
+# Kubernetes Banking Platform (Full Stack DevOps Project)
 
 This project demonstrates a complete cloud-native banking-style application deployed on a Kubernetes cluster. It includes a full-stack architecture (frontend + backend), database, logging system, security policies, and production-grade Kubernetes resources.
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 - backend/ → Python backend service (API)
 - frontend/ → React frontend application
@@ -23,7 +23,7 @@ This project demonstrates a complete cloud-native banking-style application depl
 
 ---
 
-## ⚙️ Architecture Overview
+##  Architecture Overview
 
 - **Frontend:** React.js
 - **Backend:** Python (Flask/FastAPI style API)
@@ -43,7 +43,7 @@ This project demonstrates a complete cloud-native banking-style application depl
 
 ---
 
-## 🚀 Features
+##  Features
 
 - Full-stack banking-style system
 - Containerized frontend and backend
@@ -56,7 +56,7 @@ This project demonstrates a complete cloud-native banking-style application depl
 
 ---
 
-## 🧱 Tech Stack
+##  Tech Stack
 
 - Frontend: React.js
 - Backend: Python
@@ -67,47 +67,70 @@ This project demonstrates a complete cloud-native banking-style application depl
 
 ---
 
-## 📦 Deployment Steps
+##  Deployment Steps
 
 ### 1. Create namespace
 ```bash
 kubectl apply -f namespaces/namespace-banking.yaml
-2. Apply configmaps and secrets
+```
+### 2. Apply configmaps and secrets
+```bash
 kubectl apply -f configmaps/
 kubectl apply -f secrets/
-3. Deploy database
+```
+### 3. Deploy database
+```bash
 kubectl apply -f statefulset/
 kubectl apply -f pvc/
-4. Deploy backend and frontend
+```
+### 4. Deploy backend and frontend
+```bash 
 kubectl apply -f deployments/
-5. Apply logging system
+```
+### 5. Apply logging system
+```bash 
 kubectl apply -f daemonset/
-6. Apply RBAC + Network Policies
+```
+### 6. Apply RBAC + Network Policies
+```bash 
 kubectl apply -f RBAC/
 kubectl apply -f "network policy"/
-7. Enable autoscaling
+```
+### 7. Enable autoscaling
+```bash
 kubectl apply -f hpa/
-8. Enable ingress
+```
+### 8. Enable ingress
+```bash
 kubectl apply -f ingress/
-🔐 Security
+```
+
+### Security
 Default-deny network policies
 Restricted service-to-service communication
 Role-based access control (RBAC)
 Secrets for sensitive data
-📊 Observability
+---
+
+### Observability
 Fluentd collects logs from nodes
 Logs stored in Elasticsearch
 Can be visualized using Kibana (optional)
-📌 Future Improvements
+---
+
+### Future Improvements
 CI/CD pipeline (GitHub Actions / Jenkins)
 Helm chart packaging
 Prometheus + Grafana monitoring
 Service mesh (Istio)
-👨‍💻 Author
+---
+
+### Author
 
 Ahmed Tarek
 DevOps / Kubernetes Project
-
-📜 License
+---
+### License
 
 Educational project only.
+---
